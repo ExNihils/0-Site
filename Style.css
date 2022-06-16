@@ -1,0 +1,225 @@
+* {
+  color: rgb(255, 255, 255);
+  font-size: max(1.1vw, 14px);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/* Traducteurs */
+button:hover {
+  background-color: rgb(87, 87, 87);
+}
+
+button {
+  background-color: rgb(43, 43, 43);
+  border: 1px solid rgb(255, 255, 255);
+  font-size: max(1.3vw, 18px);
+  font-weight: lighter;
+}
+
+.navlang {
+  font-weight: 100;
+}
+
+.visible {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/* Textes */
+.texte2 {
+  font-size: max(1.5vw, 18px);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.texte3 {
+  font-size: max(1.3vw, 16px);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: -5vw;
+  ;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/*  Barre de navigation */
+#nav1 {
+  top: -15vh;
+}
+
+#nav2 {
+  bottom: -2.5vh;
+}
+
+nav {
+  width: 100%;
+  transition: 0.5s;
+  z-index: 2;
+  position: fixed;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+li {
+  position: relative 100px;
+}
+
+.link:hover {
+  transition: 0.3s ease;
+  color: rgb(255, 255, 255);
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(197, 197, 197);
+}
+
+
+.header {
+  width: 98vw;
+}
+
+.titres {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 7%;
+  margin-top: 10vh;
+  margin-bottom: 0px;
+  line-height: 4vh;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/* Images du sommaire: */
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-evenly;
+
+  width: fit-content;
+  margin: 5%;
+  margin-top: 1%;
+  margin-right: 3%;
+}
+
+.miniatures {
+  display: block;
+  width: 8vw;
+  min-width: 60px;
+  height: 8vw;
+  min-height: 60px;
+  transition: 0.3s ease;
+  object-fit: cover;
+}
+
+.icons {
+  margin: 0.7em;
+  border: 1px solid rgb(255, 255, 255);
+  transition: 0.3s ease;
+  z-index: 1;
+}
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/* Navigation dans la lecture */
+.previous {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 23vw;
+  height: 100vh;
+  text-align: left;
+  color: rgba(0, 136, 255, 0);
+}
+
+.next {
+  position: fixed;
+  z-index: 2;
+  right: 0px;
+  top: 0px;
+  width: 78vw;
+  height: 98vh;
+  text-align: right;
+  color: rgba(0, 136, 255, 0);
+}
+
+.iconSlider {
+  height: 3vh;
+  margin: 1em;
+}
+
+.navLecture {
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 3;
+  width: 20vw;
+  left: 35%;
+  bottom: -15vh;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/* Images dans la lecture: */
+.portrait {
+  display: block;
+  margin: auto;
+  height: 98vh;
+}
+
+.paysage {
+  width: 98vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.colonne {
+  display: block;
+  margin: auto;
+  width: 98vw;
+}
+
+video {
+  z-index: 3;
+}
+
+.smallPortrait {
+  margin: auto;
+  height: 80vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.smallPaysage {
+  margin: auto;
+  width: 80vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

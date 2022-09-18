@@ -1,0 +1,35 @@
+Etapes:
+-Mettre les fichiers de travail en ordre dans leur dossier.
+-Les copier dans un dossier du site à leur chapitre.
+-Capture d'écran renommées dans l'ordre de la 1ère frame des vidéos.
+-Convertir les images en .jpg, puis les redimensionner.
+-Créer les thumbnails. Renommer en ordre toutes les images.
+-Dans le sommaire français, mettre toutes les thumbnails.
+-Mettre les liens vers les.html en leur trouvant des noms.
+-Creer les .html correspondant dans le dossier /fr.
+-Copier "template à utiliser" et y ajouter les liens correspondant sur chaque .html.
+-Ecrire et placer le texte dans les .html.
+-Copier les .html dans /en et traduire les textes.
+-Faire les vidéos/360°/etc.
+
+
+
+
+Images: 
+Qualité 5. 
+2000px de  haut pour portraits. 
+3000 de large pour paysages.
+
+Vidéos:
+VBR 5.
+1920x1080px
+24i/s
+
+Font:
+EB Garamond.
+4000px de large =48
+3000px =36
+
+
+Texte par défaut top= 86 ou 14vh.
+

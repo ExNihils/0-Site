@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="Assets/Logo.png" />
+    <link rel="stylesheet" href="../../Style.css" />
+    <title></title>
+  </head>
+  <body>
+    <!-- Desactiver les HTML dans le javascript pour travailler sur ça. -->
+    <!-------------- oneHTML ------------------------>
+    <nav class="navLecture">
+      <ul>
+        <li>
+          <a href="../../1 Reveil/en/18 billions.html"
+            ><img
+              class="iconSlider"
+              src="../../Assets/First.png"
+              alt="First"
+              title="First"
+          /></a>
+        </li>
+        <li>
+          <div>
+            <img
+              class="iconSlider previousPage"
+              src="../../Assets/Previous.png"
+              alt="Previous"
+              title="Previous"
+            />
+          </div>
+        </li>
+        <li>
+          <a href="../../Sommaire.html"
+            ><img
+              class="iconSlider"
+              src="../../Assets/Accueil.png"
+              alt="Welcome"
+              title="Welcome"
+          /></a>
+        </li>
+        <li>
+        <div onclick="zoomIn()">
+          <img
+            class="iconSlider zoomAvant visible"
+            src="../../Assets/Zoom.png"
+            alt="Zoom"
+            title="Zoom"
+          />
+        </div>
+      </li>
+      <li>
+      <div onclick="zoomBack()">
+        <img
+          class="iconSlider zoomOut hidden"
+          src="../../Assets/Next.png"
+          alt="Zoom"
+          title="Zoom"
+        />
+      </div>
+      </li>
+        <!-- <li><a  id= "fullscreen" onclick="toggleFullScreen()"><img class= "iconSlider" onclick="" src="Assets/Fullscreen.png"title="Fullscreen" alt="Fullscreen"></img></a></li> -->
+        <li>
+          <div>
+            <img
+              class="iconSlider nextPage"
+              src="../../Assets/Next.png"
+              alt="Next"
+              title="Next"
+            />
+          </div>
+        </li>
+        <li>
+          <a href="../../5 l'Empereur/fr/Oeuvre.html"
+            ><img
+              class="iconSlider"
+              src="../../Assets/Last.png"
+              alt="Last"
+              title="Last"
+          /></a>
+        </li>
+      </ul>
+      </nav>
+    <!-------------- oneHTML ------------------------>
+
+    <a href="next.html" class="next"></a>
+
+    <!-------------- twoHTML ------------------------>
+    <!-------------- twoHTML ------------------------>
+
+    <img src="/1 Reveil/Reveil (2).jpg" class="picture" />
+    <div class="narration"></div>
+
+    <!-------------- threeHTML ------------------------>
+    <!-------------- threeHTML ------------------------>
+
+    <a href="previous.html" class="previous"></a>
+
+    <!-------------- fourHTML ------------------------>
+    <div class="keypress"><span id="key"></span></div>
+    <!-------------- fourHTML ------------------------>
+
+    <script src="../../Lecture.js"></script>
+  </body>
+</html>

@@ -13,42 +13,114 @@
     <!-- Barre de navigation -->
     <nav id="nav1">
       <ul class="english visible">
-        <li><h2><a class="link" href="1 Reveil/18 billions.html" target="_blank">Read</a></h2></li>  
-        <li><h2><a class="link" href="#top" >Top</a></h2></li> 
-        <li><h2><a class="link" href="#end">End</a></h2></li>
+        <li><h2><a class="link clickText" href="1 Reveil/en/18 billions.html" target="_blank">Read</a></h2></li>  
+        <li><h2><a class="link clickText" href="#top" >Top</a></h2></li> 
+        <li><h2><a class="link clickText" href="#end">End</a></h2></li>
       </ul>
       <ul class="french hidden">
-        <li><h2><a class="link" href="1 Reveil/18 billions.html" target="_blank">Lire</a></h2></li>  
-        <li><h2><a class="link" href="#top" >Haut</a></h2></li> 
-        <li><h2><a class="link" href="#end">Fin</a></h2></li>
+        <li><h2><a class="link clickText" href="1 Reveil/fr/18 billions.html" target="_blank">Lire</a></h2></li>  
+        <li><h2><a class="link clickText" href="#haut" >Haut</a></h2></li> 
+        <li><h2><a class="link clickText" href="#end">Fin</a></h2></li>
       </ul>
     </nav>
 
     <nav id="nav2">
       <ul class="english visible"> 
-        <li><h2><a class="link" href="#end">End</a></h2></li>
+        <li><h2><a class="link clickText" href="#end">End</a></h2></li>
       </ul>
       <ul class="french hidden"> 
-        <li><h2><a class="link" href="#end">Fin</a></h2></li>
+        <li><h2><a class="link clickText" href="#end">Fin</a></h2></li>
       </ul>
     </nav>
 
         <!-- Barre de navigation -->
         
 <!-- ------------------------------------------------------------------------------------------------------------------- -->      
-<header><a id="top" href="1 Reveil/18 billions.html"><img class= "header" src="assets/Header.jpg"></a> </header>
+<div class= "header" id="top">
+  
+  <a class="prevP" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="nextP" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="custom-slider fade">
+    <div class="slide-index"></div>
+    <img class="headerPicture" src="Assets/Header (1).jpg">
+    <div class="slide-text"></div>
+  </div>
+  <div class="custom-slider fade">
+    <div class="slide-index"></div>
+    <img class="headerPicture" src="Assets/Header (2).jpg">
+    <div class="slide-text"></div>
+  </div>
+  <div class="custom-slider fade">
+    <div class="slide-index"></div>
+    <img class="headerPicture" src="Assets/Header (3).jpg">
+    <div class="slide-text"></div>
+  </div>
+  <div class="custom-slider fade">
+    <div class="slide-index"></div>
+    <img class="headerPicture" src="Assets/Header (4).jpg">
+    <div class="slide-text"></div>
+  </div>
+  <div class="custom-slider fade">
+    <div class="slide-index"></div>
+    <img class="headerPicture" src="Assets/Header (5).jpg">
+    <div class="slide-text"></div>
+  </div>
+</div>
+
+<br>
+
+<div class="slide-dot">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+ </div>
+  <!-- ------------------------------------------------------------------------------------------------------------------- -->
+<!-- bouttons de Language -->
+<br>
+<div class="container">
+<div class="translators">
+  <button class="navLang" onclick="changeEn()">En</button> 
+  <button class="navLang" onclick="changeFr()">Fr</button>
+</div>
+</div>
+<!-- bouttons de Language -->
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
+
+
 
 <!-- ------------------------------------------------------------------------------------------------------------------- -->
 <!-- <button onclick = "goToPreviousURL()">Last page visited</button>  -->
 
+
+
+
 <!-- ------------------------------------------------------------------------------------------------------------------- -->
-<!-- bouttons de Language -->
-<div >
-  <div>
-    <button class="navLang" onclick="changeEn()">En</button> 
-    <button class="navLang" onclick="changeFr()">Fr</button>
+<!-- Incipit-->
+<div class="titres english visible" style="  margin-top: 6vh;">
+    <span class="texte4">  This story is based on real events. 
+    <br>
+    If the Universe is infinite, then this work is not a fiction, 
+    all that is related to it took place, takes place, and will take place here and everywhere else.
+    <br>
+    Whether it is past, present or future for you depends on when you experience it 
+    and what part you read. </span> 
+ </div>
+ 
+ <div class="titres french hidden" style="  margin-top: 6vh;">
+  <span class="texte4">Cette histoire est basée sur des événements réels. 
+    <br>
+    Si l'Univers est infini, alors cette œuvre n'est pas une fiction, 
+    tout ce qui y est rapporté a eu lieu, a lieu, et aura lieu ici et partout ailleurs. 
+    <br>
+    Le fait qu'il soient passés, présents ou futurs pour vous dépend du moment où vous le vivez 
+    et de la partie que vous lisez.
+     </span> 
   </div>
-<!-- bouttons de Language -->
+ <!-- Incipit-->
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
 
 <!-- ------------------------------------------------------------------------------------------------------------------- -->
 <!-- Titre 1 Reveil-->
@@ -63,127 +135,225 @@
  </div>
 <!-- Titre 1 Reveil-->
 
-<!-- Icones 1 Reveil -->
-<div class="thumbnails">
-  <a class="icons" href="1 Reveil/18 billions.html" target="_blank">
+<!-- Icones 1 Reveil En-->
+<div class="thumbnails english visible">
+  <a class="icons" href="1 Reveil/en/18 billions.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 0.jpg"
       />
-  <a class="icons" href="1 Reveil/Wel.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/Wel.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 1.jpg"
       />
-  <a class="icons" href="1 Reveil/come.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/come.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 0.jpg"
       />
-  <a class="icons" href="1 Reveil/to.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/to.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 3.jpg"
       />
-  <a class="icons" href="1 Reveil/your.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/your.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 5.jpg"
       />
-  <a class="icons" href="1 Reveil/life.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/life.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 7.jpg"
       />
-  <a class="icons" href="1 Reveil/There.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/There.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 9 Anim.jpg"
       />
-  <a class="icons" href="1 Reveil/is.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/is.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 10.jpg"
       />
-  <a class="icons" href="1 Reveil/no.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/no.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 11 Sketchs.jpg"
       />
-  <a class="icons" href="1 Reveil/tur.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/tur.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 12 0 0 Sketchs 1.jpg"
       />
-  <a class="icons" href="1 Reveil/ning.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/ning.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 12 0 0 Sketchs 2.jpg"
       />
-  <a class="icons" href="1 Reveil/back.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/back.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 12 0 1.jpg"
       />
-  <a class="icons" href="1 Reveil/E.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/E.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 12 1 1.jpg"
       />
-   <a class="icons" href="1 Reveil/ven.html" target="_blank">
+   <a class="icons" href="1 Reveil/en/ven.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 12 1 copie.jpg"
       />
-   <a class="icons" href="1 Reveil/while.html" target="_blank">
+   <a class="icons" href="1 Reveil/en/while.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 12 1 copie (2).jpg"
       />
-   <a class="icons" href="1 Reveil/we.html" target="_blank">
+   <a class="icons" href="1 Reveil/en/we.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Réveil 12 2 copie.jpg"
       />
-  <a class="icons" href="1 Reveil/sleep.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/sleep.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Réveil 12 2.jpg"
       />
-  <a class="icons" href="1 Reveil/tzimtzum.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/tzimtzum.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 0.jpg"
       />  
-  <a class="icons" href="1 Reveil/The long Walk.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/The long Walk.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 13.jpg"
       />
-  <a class="icons" href="1 Reveil/So.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/So.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Réveil 14 1.jpg"
       />
-  <a class="icons" href="1 Reveil/I.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/I.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Réveil 14 2.jpg"
       />
-  <a class="icons" href="1 Reveil/walked.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/walked.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Réveil 15.jpg"
       />
-  <a class="icons" href="1 Reveil/And.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/And.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 21 1.jpg"
       />
-  <a class="icons" href="1 Reveil/he.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/he.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 21 2.jpg"
       />
-  <a class="icons" href="1 Reveil/arrived.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/arrived.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 21 3.jpg"
       />
-  <a class="icons" href="1 Reveil/Hitch.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/Hitch.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 22 0.jpg"
       />
-  <a class="icons" href="1 Reveil/hi.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/hi.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 23 1.jpg"
       />
-  <a class="icons" href="1 Reveil/king.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/king.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 23 2.jpg"
       />
-  <a class="icons" href="1 Reveil/Fi.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/First Doubt.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 24 1.jpg"
       />
-  <a class="icons" href="1 Reveil/rst.html" target="_blank">
-        <img class="miniatures" src="1 Reveil/tn_Reveil 24 2.jpg"
-      />
-  <a class="icons" href="1 Reveil/dou.html" target="_blank">
-        <img class="miniatures" src="1 Reveil/tn_Reveil 24 3.jpg"
-      />
-  <a class="icons" href="1 Reveil/bt.html" target="_blank">
-        <img class="miniatures" src="1 Reveil/tn_Reveil 24 4.jpg"
-      />
-  <a class="icons" href="1 Reveil/In.html" target="_blank">
-        <img class="miniatures" src="1 Reveil/tn_Reveil 26.jpg"
-      />
-  <a class="icons" href="1 Reveil/Sky.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/Sky.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 28.jpg"
       />
-  <a class="icons" href="1 Reveil/Nightfall.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/Nightfall.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 30.jpg"
       /></a>
-  <a class="icons" href="1 Reveil/Instant d'éternité.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/Instant d'éternité.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 31.jpg"
       /></a>
-  <a class="icons" href="1 Reveil/Eternité.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/Instants.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 32.jpg"
       /></a>
-  <a class="icons" href="1 Reveil/Stars.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/Stars.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 33.jpg"
       /></a>
-  <a class="icons" href="1 Reveil/Arrivée.html" target="_blank">
+  <a class="icons" href="1 Reveil/en/Arrivée.html" target="_blank">
         <img class="miniatures" src="1 Reveil/tn_Reveil 34.jpg"
       /></a>
 </div>
-<!-- Icones I Reveil -->
+<!-- Icones I Reveil En-->
+
+<!-- Icones 1 Reveil Fr-->
+<div class="thumbnails french hidden">
+  <a class="icons" href="1 Reveil/fr/18 billions.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 0.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/Wel.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 1.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/come.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 0.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/to.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 3.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/your.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 5.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/life.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 7.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/There.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 9 Anim.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/is.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 10.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/no.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 11 Sketchs.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/tur.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 12 0 0 Sketchs 1.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/ning.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 12 0 0 Sketchs 2.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/back.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 12 0 1.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/E.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 12 1 1.jpg"
+      />
+   <a class="icons" href="1 Reveil/fr/ven.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 12 1 copie.jpg"
+      />
+   <a class="icons" href="1 Reveil/fr/while.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 12 1 copie (2).jpg"
+      />
+   <a class="icons" href="1 Reveil/fr/we.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Réveil 12 2 copie.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/sleep.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Réveil 12 2.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/tzimtzum.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 0.jpg"
+      />  
+  <a class="icons" href="1 Reveil/fr/The long Walk.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 13.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/So.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Réveil 14 1.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/I.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Réveil 14 2.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/walked.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Réveil 15.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/And.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 21 1.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/he.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 21 2.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/arrived.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 21 3.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/Hitch.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 22 0.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/hi.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 23 1.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/king.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 23 2.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/First Doubt.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 24 1.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/Sky.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 28.jpg"
+      />
+  <a class="icons" href="1 Reveil/fr/Nightfall.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 30.jpg"
+      /></a>
+  <a class="icons" href="1 Reveil/fr/Instant d'éternité.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 31.jpg"
+      /></a>
+  <a class="icons" href="1 Reveil/fr/Instants.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 32.jpg"
+      /></a>
+  <a class="icons" href="1 Reveil/fr/Stars.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 33.jpg"
+      /></a>
+  <a class="icons" href="1 Reveil/fr/Arrivée.html" target="_blank">
+        <img class="miniatures" src="1 Reveil/tn_Reveil 34.jpg"
+      /></a>
+</div>
+<!-- Icones I Reveil Fr-->
 
 
 
@@ -200,169 +370,333 @@
   </div>
  <!-- Titre 2 Ascension-->
 
-<!-- Icones 2 Ascension -->
-<div class="thumbnails">
-  <a class="icons" href="2 Ascension/So.html" target="_blank">
+<!-- Icones 2 Ascension En-->
+<div class="thumbnails english visible">
+  <a class="icons" href="2 Ascension/en/So.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (1).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/I.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/I.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (2).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/star.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/star.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (3).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/ted.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/ted.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (4).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/my.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/my.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (5).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fi.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/fi.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (6).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/rst.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/rst.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (7).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/li.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/li.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (8).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fe.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/fe.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (9).jpg"
       /></a>
-    <a class="icons" href="2 Ascension/ted.html" target="_blank">
+    <a class="icons" href="2 Ascension/en/liv.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (10).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/my.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/ed.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (11).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fi.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/lik.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (12).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/So.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/e.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (13).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/I.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/a.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (14).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/star.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/ny.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (15).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/ted.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/one.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (16).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/my.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/else.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (17).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fi.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/dan.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (18).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/rst.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/ced.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (19).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/li.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/loved.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (20).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fe.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/hated.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (21).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/ted.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/worked.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (22).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/my.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/met.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (23).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fi.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/all.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (24).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/my.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/peo.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (25).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fi.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/ple.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (26).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/So.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/there.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (27).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/I.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/learned.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (28).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/star.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/slept.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (29).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/ted.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/Days.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (30).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/my.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/passed.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (31).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fi.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/weeks.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (32).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/rst.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/months.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (33).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/li.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/years.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (34).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fe.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/where.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (35).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/ted.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/rea.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (36).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/my.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/lized.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (37).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fi.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/world.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (38).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/my.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/cons.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (39).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fi.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/tan.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (40).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/So.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/tly.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (41).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/I.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/in.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (42).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/star.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/mo.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (43).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/ted.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/tion.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (44).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/my.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/mov.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (45).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fi.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/ing.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (46).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/rst.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/wea.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (47).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/li.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/ring.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (48).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fe.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/out.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (49).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/ted.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/col.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (50).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/my.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/lap.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (51).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fi.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/sing.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (52).jpg"
       /></a>
-  <a class="icons" href="2 Ascension/fi.html" target="_blank">
+  <a class="icons" href="2 Ascension/en/unstable.html" target="_blank">
         <img class="miniatures" src="2 Ascension/tn_Ascension (53).jpg"
       /></a>
 </div>
-<!-- Icones 2 Ascension -->
+<!-- Icones 2 Ascension En-->
+
+<!-- Icones 2 Ascension Fr-->
+<div class="thumbnails french hidden">
+  <a class="icons" href="2 Ascension/fr/So.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (1).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/I.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (2).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/star.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (3).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/ted.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (4).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/my.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (5).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/fi.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (6).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/rst.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (7).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/li.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (8).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/fe.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (9).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/liv.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (10).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/ed.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (11).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/lik.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (12).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/e.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (13).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/a.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (14).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/ny.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (15).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/one.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (16).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/else.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (17).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/dan.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (18).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/ced.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (19).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/loved.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (20).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/hated.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (21).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/worked.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (22).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/met.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (23).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/all.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (24).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/peo.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (25).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/ple.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (26).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/there.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (27).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/learned.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (28).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/slept.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (29).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/Days.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (30).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/passed.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (31).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/weeks.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (32).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/months.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (33).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/years.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (34).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/where.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (35).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/rea.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (36).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/lized.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (37).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/world.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (38).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/cons.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (39).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/tan.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (40).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/tly.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (41).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/in.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (42).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/mo.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (43).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/tion.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (44).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/mov.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (45).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/ing.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (46).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/wea.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (47).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/ring.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (48).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/out.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (49).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/col.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (50).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/lap.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (51).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/sing.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (52).jpg"
+  /></a>
+<a class="icons" href="2 Ascension/fr/unstable.html" target="_blank">
+    <img class="miniatures" src="2 Ascension/tn_Ascension (53).jpg"
+  /></a>
+</div>
+<!-- Icones 2 Ascension Fr-->
 
 
 
@@ -379,16 +713,365 @@
   </div>
  <!-- Titre 3 Croire, croître-->
 
-<!-- Icones 3 Croire, croître -->
-<div class="thumbnails">
-  <a class="icons" href="3 Croire Croître/And.html" target="_blank">
-        <img class="miniatures" src="2 Ascension/tn_Ascension (1).jpg"
+<!-- Icones 3 Croire, croître FR-->
+<div class="thumbnails french hidden">
+  <a class="icons" href="3 Croire Croître/fr/And.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_1 Stable.jpg"
       /></a>
-
+      <a class="icons" href="3 Croire Croître/fr/the.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_2 Le meilleur des Mondes.JPG"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/world.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_4 L'impulsion.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/is.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (1).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/sta.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (2).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/ble.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (3).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/now.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (4).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/peo.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (5).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/ple.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (6).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/are.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (7).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/ha.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (8).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/ppy.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (9).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/In.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (10).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/be.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_6 vlcsnap-2022-09-07-15h50m08s920.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/gi.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_8 Arbre Phylogénétique.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/ning.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_9 vlcsnap-2022-09-07-15h50m16s222.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/there.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_10 Socrate.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/wa.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_11 vlcsnap-2022-09-07-15h50m22s203.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/sn't.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_12 Prieres.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/So.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_13 Origines I Causalité.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/was.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_14 Colonisation (1).JPG"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/dark.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_14 Colonisation (2).JPG"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/ness.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_14 Colonisation (3).JPG"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/si.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_15 Croissance Monde (1).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/lence.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_15 Croissance Monde (2).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/peace.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_15 Croissance Monde (3).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/free.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_15 Croissance Monde (4).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/dom.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_16 Maths (2).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/a.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_17 Maths.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/nar.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_18 vlcsnap-2022-09-07-15h50m30s991.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/chy.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_19 Colonisation (1).JPG"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/cold.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_19 Colonisation (2).JPG"
+      /></a>
+      <a class="icons" href="3 Croire Croître/fr/chaos.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_20 Illustrations The Emperor.jpg"
+      /></a>
 </div>
-<!-- Icones 3 Croire, croître -->
+<!-- Icones 3 Croire, croître FR-->
+
+<!-- Icones 3 Croire, croître EN-->
+<div class="thumbnails english visible">
+  <a class="icons" href="3 Croire Croître/en/And.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_1 Stable.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/the.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_2 Le meilleur des Mondes.JPG"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/world.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_4 L'impulsion.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/is.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (1).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/sta.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (2).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/ble.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (3).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/now.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (4).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/peo.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (5).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/ple.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (6).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/are.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (7).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/ha.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (8).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/ppy.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (9).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/In.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_5 Croissance Monde  (10).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/be.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_6 vlcsnap-2022-09-07-15h50m08s920.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/gi.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_8 Arbre Phylogénétique.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/ning.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_9 vlcsnap-2022-09-07-15h50m16s222.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/there.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_10 Socrate.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/wa.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_11 vlcsnap-2022-09-07-15h50m22s203.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/sn't.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_12 Prieres.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/So.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_13 Origines I Causalité.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/was.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_14 Colonisation (1).JPG"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/dark.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_14 Colonisation (2).JPG"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/ness.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_14 Colonisation (3).JPG"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/si.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_15 Croissance Monde (1).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/lence.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_15 Croissance Monde (2).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/peace.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_15 Croissance Monde (3).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/free.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_15 Croissance Monde (4).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/dom.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_16 Maths (2).jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/a.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_17 Maths.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/nar.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_18 vlcsnap-2022-09-07-15h50m30s991.jpg"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/chy.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_19 Colonisation (1).JPG"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/cold.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_19 Colonisation (2).JPG"
+      /></a>
+      <a class="icons" href="3 Croire Croître/en/chaos.html" target="_blank">
+        <img class="miniatures" src="3 Croire Croître/tn_20 Illustrations The Emperor.jpg"
+      /></a>
+</div>
+<!-- Icones 3 Croire, croître EN-->
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
 
 
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
+<!-- Titre 4 Hécatomb -->
+<div class="titres english visible">
+  <span class="texte2">IV - Hécatomb - </span> 
+  <span class="texte3" style="margin-left: -10vw;"><br>"And after eighteen billions years, Hécatomb."</span>
+ </div>
+ 
+ <div class="titres french hidden">
+   <span class="texte2">IV - Hécatomb - </span> 
+   <span class="texte3" style="margin-left: -10vw;"><br>"Et après 18 milliards d'années, Hécatomb."</span>
+  </div>
+ <!-- Titre 4 Hécatomb-->
+ <!-- Icones 4 Hécatomb FR-->
+<div class="thumbnails english visible">
+  <a class="icons" href="4 Hécatomb/en/And.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (1).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/en/af.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (2).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/en/ter.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (3).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/en/eigh.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (4).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/en/teen.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (5).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/en/bil.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (6).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/en/lions.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (7).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/en/years.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (8).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/en/Hécatomb.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (9).jpg"
+      /></a>
+</div>
+<!-- Icones 4 Hécatomb FR-->
+
+<!-- Icones 4 Hécatomb FR-->
+<div class="thumbnails french hidden">
+  <a class="icons" href="4 Hécatomb/fr/And.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (1).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/fr/af.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (2).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/fr/ter.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (3).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/fr/eigh.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (4).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/fr/teen.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (5).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/fr/bil.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (6).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/fr/lions.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (7).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/fr/years.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (8).jpg"
+      /></a>
+      <a class="icons" href="4 Hécatomb/fr/Hécatomb.html" target="_blank">
+        <img class="miniatures" src="4 Hécatomb/tn_Hecatomb (9).jpg"
+      /></a>
+</div>
+<!-- Icones 4 Hécatomb FR-->
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
+<!-- Titre 5 L'Empereur -->
+<div class="titres english visible">
+  <span class="texte2">V - L'Empereur - </span> 
+  <span class="texte3" style="margin-left: -10vw;"><br>"Because <em>everything</em> is in Hécatomb"</span>
+ </div>
+ 
+ <div class="titres french hidden">
+   <span class="texte2">V - L'Empereur - </span> 
+   <span class="texte3" style="margin-left: -10vw;"><br>"Car <em>tout</em> est dans Hécatomb."</span>
+  </div>
+ <!-- Titre 5 L'Empereur-->
+
+<!-- Icones 5 L'Empereur -->
+<div class="thumbnails english visible">
+  <a class="icons" href="5 L'Empereur/fr/Be.html" target="_blank">
+        <img class="miniatures" src="5 L'Empereur/tn_Empereur (1).jpg"
+  /></a>
+  <a class="icons" href="5 L'Empereur/fr/cause.html" target="_blank">
+    <img class="miniatures" src="5 L'Empereur/tn_Empereur (2).jpg"
+/></a>
+<a class="icons" href="5 L'Empereur/fr/e.html" target="_blank">
+  <img class="miniatures" src="5 L'Empereur/tn_Empereur (3).jpg"
+/></a>
+<a class="icons" href="5 L'Empereur/fr/ve.html" target="_blank">
+  <img class="miniatures" src="5 L'Empereur/tn_Empereur (4).jpg"
+/></a>
+<a class="icons" href="5 L'Empereur/fr/ry.html" target="_blank">
+<img class="miniatures" src="5 L'Empereur/tn_Empereur (5).jpg"
+/></a>
+<a class="icons" href="5 L'Empereur/fr/thing.html" target="_blank">
+<img class="miniatures" src="5 L'Empereur/tn_Empereur (6).jpg"
+/></a>
+<a class="icons" href="5 L'Empereur/fr/is.html" target="_blank">
+  <img class="miniatures" src="5 L'Empereur/tn_Empereur (7).jpg"
+/></a>
+<a class="icons" href="5 L'Empereur/fr/in.html" target="_blank">
+<img class="miniatures" src="5 L'Empereur/tn_Empereur (8).jpg"
+/></a>
+<a class="icons" href="5 L'Empereur/fr/Hé.html" target="_blank">
+<img class="miniatures" src="5 L'Empereur/tn_Empereur (9).jpg"
+/></a>
+<a class="icons" href="5 L'Empereur/fr/ca.html" target="_blank">
+<img class="miniatures" src="5 L'Empereur/tn_Empereur (10).jpg"
+/></a>
+<a class="icons" href="5 L'Empereur/fr/tomb.html" target="_blank">
+<img class="miniatures" src="5 L'Empereur/tn_Empereur (11).jpg"
+/></a>
+<a class="icons" href="5 L'Empereur/fr/Until.html" target="_blank">
+<img class="miniatures" src="5 L'Empereur/tn_Empereur (12).jpg"
+/></a>
+<a class="icons" href="5 L'Empereur/fr/the.html" target="_blank">
+  <img class="miniatures" src="5 L'Empereur/tn_Empereur (13).jpg"
+  /></a>
+  <a class="icons" href="5 L'Empereur/fr/absolute.html" target="_blank">
+  <img class="miniatures" src="5 L'Empereur/tn_Empereur (14).jpg"
+  /></a>
+  <a class="icons" href="5 L'Empereur/fr/Oeuvre.html" target="_blank">
+  <img class="miniatures" src="5 L'Empereur/tn_Empereur (15).jpg"
+  /></a>
+</div>
+<!-- Icones 5 L'Empereur -->
+<!-- ------------------------------------------------------------------------------------------------------------------- -->
 
 
 <!-- ------------------------------------------------------------------------------------------------------------------- -->

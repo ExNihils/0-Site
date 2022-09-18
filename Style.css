@@ -1,12 +1,17 @@
+@font-face {
+  font-family: "EBGaramond";
+  src: url("Assets/Fonts/EBGaramond-Regular.ttf");
+}
+
 * {
   color: rgb(255, 255, 255);
-  font-size: max(1.1vw, 14px);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
+
+
 
 
 
@@ -19,12 +24,9 @@ button:hover {
 button {
   background-color: rgb(43, 43, 43);
   border: 1px solid rgb(255, 255, 255);
-  font-size: max(1.3vw, 18px);
-  font-weight: lighter;
-}
-
-.navlang {
+  font-size: max(1.1vw, 16px);
   font-weight: 100;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .visible {
@@ -33,6 +35,21 @@ button {
 
 .hidden {
   display: none;
+}
+
+.zoomOut {
+  display: none;
+}
+
+
+.translators {
+  margin: 0;
+  position: absolute;
+  right: 48.2%;
+}
+
+.container {
+  position: relative;
 }
 
 
@@ -45,40 +62,73 @@ button {
 
 .texte3 {
   font-size: max(1.3vw, 16px);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: EBGaramond;
   margin-left: -5vw;
-  ;
+}
+
+.texte4 {
+  font-size: max(1.3vw, 16px);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: -5vw;
+}
+
+.clickText {
+  font-size: max(1.3vw, 14px);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
 /*------------------------------------------------------------------------------------------------------------------*/
-/*  Barre de navigation */
+/* Narration/écriture dans Lecture: */
+.narration {
+  display: block;
+  z-index: 3;
+  position: absolute;
+  font-family: EBGaramond;
+  font-size: 2vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black;
+}
+
+@media only screen and (max-width: 1000px) {
+  .narration {
+    position: absolute;
+    font-family: EBGaramond;
+    font-size: 3vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/*  Barre de navigation du Sommaire*/
 #nav1 {
   top: -15vh;
 }
 
 #nav2 {
-  bottom: -2.5vh;
+  bottom: 0vh;
 }
 
 nav {
   width: 100%;
-  transition: 0.5s;
+  height: 8vh;
+  transition: 0.7s;
   z-index: 2;
   position: fixed;
+  background-color: black;
 }
 
 ul {
   list-style-type: none;
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-}
-
-li {
-  position: relative 100px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .link:hover {
@@ -91,11 +141,6 @@ li {
   color: rgb(197, 197, 197);
 }
 
-
-.header {
-  width: 98vw;
-}
-
 .titres {
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 7%;
@@ -105,9 +150,8 @@ li {
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
-/* Images du sommaire: */
+/* Images miniatures du sommaire: */
 .thumbnails {
-  display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
@@ -147,10 +191,10 @@ li {
   left: 0px;
   top: 0px;
   z-index: 1;
-  width: 23vw;
+  width: 25vw;
   height: 100vh;
-  text-align: left;
   color: rgba(0, 136, 255, 0);
+  cursor: default;
 }
 
 .next {
@@ -158,38 +202,102 @@ li {
   z-index: 2;
   right: 0px;
   top: 0px;
-  width: 78vw;
-  height: 98vh;
-  text-align: right;
+  width: 75vw;
+  height: 100vh;
   color: rgba(0, 136, 255, 0);
+  cursor: default;
+}
+
+.previousVideo {
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  width: 23vw;
+  height: 75vh;
+  color: rgba(0, 136, 255, 0);
+  left: 0px;
+  text-align: left;
+  cursor: default;
+}
+
+.nextVideo {
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  width: 23vw;
+  height: 75vh;
+  color: rgba(0, 136, 255, 0);
+  text-align: right;
+  right: 0px;
+  cursor: default;
 }
 
 .iconSlider {
   height: 3vh;
   margin: 1em;
+  opacity: 50%;
+  cursor: pointer;
 }
+
+.iconSlider:hover {
+  opacity: 100%;
+  transition: 0.3s ease;
+}
+
 
 .navLecture {
   background-color: rgba(0, 0, 0, 0);
-  z-index: 3;
+  z-index: 4;
   width: 20vw;
-  left: 35%;
   bottom: -15vh;
+  /* bottom: 4vh; */
+  margin-left: 40vw;
+  /* opacity: 0%; */
 }
+
+/* 
+.mouse-moved {
+  opacity: 100%;
+}
+
+.mouse-not-moved {
+  opacity: 0%;
+} */
 
 
 
 
 /*------------------------------------------------------------------------------------------------------------------*/
 /* Images dans la lecture: */
-.portrait {
-  display: block;
-  margin: auto;
-  height: 98vh;
+.picture,
+.paysage {
+  z-index: 0;
+  object-fit: contain;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.paysage {
-  width: 98vw;
+.Spicture,
+.Spaysage {
+  object-fit: contain;
+  height: 80%;
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.XSpicture,
+.XSpaysage {
+  object-fit: contain;
+  height: 50%;
+  width: 50%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -199,27 +307,132 @@ li {
 .colonne {
   display: block;
   margin: auto;
-  width: 98vw;
+  width: 100%;
 }
 
 video {
+  z-index: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .portrait {
+    display: block;
+    margin: auto;
+    height: 96.5vh;
+  }
+}
+
+
+
+/*------------------------------------------------------------------------------------------------------------------*/
+/* Diaporama: */
+.custom-slider {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  height: 100%;
+}
+
+.prevD {
   z-index: 3;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 25vw;
+  height: 100vh;
 }
 
-.smallPortrait {
-  margin: auto;
-  height: 80vh;
+.nextD {
+  z-index: 3;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 0px;
+  top: 0px;
+  width: 75vw;
+  height: 100vh;
 }
 
-.smallPaysage {
-  margin: auto;
-  width: 80vw;
-  position: fixed;
+.slide-text {
+  position: absolute;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 15px;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.headerPicture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide-dot {
+  text-align: center;
+  right: 40%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #87878742;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #8282828d;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.prevP,
+.nextP {
+  cursor: pointer;
+  position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.445);
+  font-size: 30px;
+  transition: 0.6s ease;
+}
+
+.prevP {
+  left: 15px;
+}
+
+.nextP {
+  right: 15px;
+}
+
+.prevP:hover,
+.nextP:hover {
+  color: white;
 }

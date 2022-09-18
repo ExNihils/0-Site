@@ -1,0 +1,27 @@
+function zoomIn() {
+    console.log("zoomIn");
+    Spaysage.style.position = "absolute";
+    Spaysage.style.object_fit = "unset";
+    Spaysage.style.height = "unset";
+    Spaysage.style.width = "unset";
+    Spaysage.style.top = "unset";
+    Spaysage.style.left = "unset";
+    Spaysage.style.transform = "unset";
+  
+    zoomAvant.style.display = "none"
+    zoomOut.style.display = "flex"
+  }
+  
+  function zoomBack() {
+    console.log("zoomBack");
+    Spaysage.style.position = "fixed";
+    Spaysage.style.object_fit = "contain";
+    Spaysage.style.height = "100%";
+    Spaysage.style.width = "100%";
+    Spaysage.style.top = "50%";
+    Spaysage.style.left = "50%";
+    Spaysage.style.transform = "translate(-50%, -50%)";
+  
+    zoomAvant.style.display = "flex"
+    zoomOut.style.display = "none"
+  }
